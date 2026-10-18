@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111113">
+
+    <title>Tom Pugh — Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Tom Pugh, Computer Games Design and Development student at Cardiff Metropolitan University.">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="topbar">
+        <a href="#home" class="brand">tom<span>.</span></a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="sidebar"
+        >
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+        <div class="profile">
+            <div class="avatar">TP</div>
+            <h2>Tom Pugh</h2>
+            <p>Games Development Student</p>
+            <p>- Cardiff Metropolitan University</p>
+        </div>
+
+        <nav aria-label="Main navigation">
+            <p class="nav-heading">MENU</p>
+
+            <a class="nav-link active" href="#home">
+                <span class="nav-icon">⌂</span>
+                Home
+            </a>
+
+            <a class="nav-link" href="#projects">
+                <span class="nav-icon">↳</span>
+                Projects
+            </a>
+
+            <a class="nav-link" href="#about">
+                <span class="nav-icon">○</span>
+                About
+            </a>
+
+            <a class="nav-link" href="#contact">
+                <span class="nav-icon">↗</span>
+                Contact
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <p class="nav-heading">ELSEWHERE</p>
+
+            <a
+                class="github-link"
+                href="https://github.com/TomPugh808"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                GitHub <span>↗</span>
+            </a>
+
+            <div class="sidebar-status">
+                <span class="status-dot"></span>
+                Available for opportunities
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <section id="home" class="section home">
+
+
+            <h1>
+                Tom Pugh<br>
+                <span>Game Development Student</span><br>
+								<h3>Cardiff Metropolitan University</h3>
+            </h1>
+
+						<img src="images/tom_day1_gamer.jpg" alt="Tom as a kid gamer" class="home-image">
+
+            <p class="intro-text">
+                I'm a Computer Games Design and Development student at
+                Cardiff Metropolitan University, interested in game design, gameplay programming and 3D modelling. I'm currently looking for a placement year in 2027 to gain real-world experience.
+            </p>
+
+            <a class="text-link" href="#projects">
+                Take a look at my work <span>→</span>
+            </a>
+
+        </section>
+
+        <section id="projects" class="section projects">
+            <div class="section-title">
+                <div>
+                    <p class="intro-label">WHAT I'VE BEEN WORKING ON</p>
+                    <h2>Projects<span>:</span></h2>
+                </div>
+                <span class="project-total">03 PROJECTS</span>
+            </div>
+
+            <article class="project">
+                <div class="project-number">01</div>
+
+                <div class="project-info">
+										<img src="images/Gauntlet_Screenshot.png" alt="gauntlet alpha screenshot" class="project-image">
+                    <h3>Gauntlet Alpha</h3>
+                    <p class="project-type">DUNGEON CRAWLER · UNITY</p>
+
+                    <p class="project-description">
+                        A group assignment project inspired by the arcade game, Gauntlet. My contribution focuses
+                        on implementing gameplay mechanics such as the Archer class and the enemy AI.
+                    </p>
+
+                    <div class="tags">
+                        <span>Unity</span>
+                        <span>C#</span>
+                        <span>GitHub</span>
+                    </div>
+
+                    <details class="project-more">
+                        <summary>More about this project</summary>
+                        <p>
+                            We were assigned to create a dungeon crawler game in Unity, using Gauntlet as inspiration. I learnt lots from this project, including team collaboration, GitHub version control, and implementing gameplay mechanics. I focused on the Archer class, including its shooting mechanics, as well as creating the enemy AI.
+                        </p>
+                    </details>
+                </div>
+
+
+            </article>
+
+            <article class="project">
+                <div class="project-number">02</div>
+
+                <div class="project-info">
+                    <h3>1066: The Arrow of Hastings</h3>
+                    <p class="project-type">STEALTH · UNREAL ENGINE</p>
+
+                    <p class="project-description">
+                        A historical stealth game concept set during the
+                        Norman invasion of England, featuring archery,
+                        infiltration, and enemy detection. Currently in development as a university group project.
+                    </p>
+
+                    <div class="tags">
+                        <span>Unreal Engine</span>
+                        <span>GDD, TDD</span>
+                        <span>Stealth</span>
+                    </div>
+
+                    <details class="project-more">
+                        <summary>More about this project</summary>
+                        <p>
+                            A university group design project exploring
+                            stealth mechanics, suspicion, noise, equipment
+                            and navigating a hostile battlefield.
+                        </p>
+                    </details>
+                </div>
+
+            </article>
+
+            <article class="project">
+                <div class="project-number">03</div>
+
+                <div class="project-info">
+										<img src="images/NeonDash_screenshot.png" alt="neon dash screenshot" class="project-image">
+                    <h3>Neon Dash</h3>
+                    <p class="project-type">2D PLATFORMER · MULTIPLAYER · UNITY</p>
+
+                    <p class="project-description">
+                        A group assignment project, 2D platformer multiplayer game built around specific movement abilities, with each player
+												having their own unique movement mechanics. I focused on the teleport mechanic as well as the health/stamina system and UI.
+                    </p>
+
+                    <div class="tags">
+                        <span>Unity</span>
+                        <span>2D</span>
+                        <span>Movement Abilities</span>
+                    </div>
+
+                    <details class="project-more">
+                        <summary>More about this project</summary>
+                        <p>
+                            A university group project exploring movement,
+                            accessible controls and a clear gameplay identity.
+                            Further implementation details can be added as
+                            the project develops.
+                        </p>
+                    </details>
+                </div>
+
+            </article>
+
+            <p class="project-note">
+                These are collaborative university projects. Descriptions
+                focus on my own contributions where specified.
+            </p>
+        </section>
+
+        <section id="about" class="section about">
+            <p class="intro-label">A BIT ABOUT ME</p>
+            <h2>Learn about <span>me!</span></h2>
+
+            <p>
+                I'm studying Computer Games Design and Development at
+                Cardiff Metropolitan University. I enjoy working
+                with code, solving problems and seeing game ideas
+                come together into a playable experience.
+            </p>
+
+            <p>
+                I'm developing my experience with Unity, C#, C++, Unreal Engine, Git
+                and collaborative development. I'm working
+                towards a placement year in 2027 where I can gain valuable experience from
+                an experienced development team.
+            </p>
+
+						<p>
+							I love to play games in my free time, my favourites are story games, MMOs and competitve games. Reached Immortal 3 in Valorant! (Around top 0.08% of players :D)
+						</p>
+
+            <div class="about-details">
+                <div>
+                    <span>EDUCATION</span>
+                    <p>BSc Computer Games Design and Development</p>
+                </div>
+
+                <div>
+                    <span>INTERESTS</span>
+                    <p>Game Design, Programming, Game Development, Playing games!</p>
+                </div>
+
+                <div>
+                    <span>TOOLS</span>
+                    <p>Unity, Unreal Engine, VS, VSC, 3DS Max, Git, GitHub</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <p class="intro-label"></p>
+            <h2>Contact<span></span></h2>
+
+            <p>
+                I'm interested in placement opportunities and connecting
+                with people working in games development and related industries.
+            </p>
+
+            <a
+                class="text-link"
+            >
+                My email:<span>tom.pugh808@gmail.com</span>
+            </a>
+
+            <a
+                class="contact-github"
+                href="https://github.com/TomPugh808"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Or find me on GitHub ↗
+            </a>
+        </section>
+
+        <footer class="footer">
+            <span>© <span id="year"></span> Tom Pugh</span>
+            <a href="#home">Back to top ↑</a>
+        </footer>
+    </main>
+
+		<div class="image-modal" id="imageModal">
+				<span class="close-modal" id="closeModal">&times;</span>
+				<img src="" alt="Enlarged image" id="enlargedImage">
+		</div>
+		
+</body>
+</html>
