@@ -745,3 +745,7 @@ main {
     font-size: 36px;
     cursor: pointer;
 }
+
+@media (max-width: 950px) {
+    body { outline: 6px solid red; }
+}
