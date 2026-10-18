@@ -213,27 +213,10 @@ main {
     justify-content: center;
 }
 
-.home-image {
-	transition: transform 0.3s ease;
-    border: 8px solid var(--border);
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-}
 
-.home-image-container {
-    position: absolute;
-    top: 90px;
-    right: 100px;
-    width: 350px;
-    text-align: center;
-}
 
-.image-caption {
-    margin-top: 10px;
-    font-size: 13px;
-    color: var(--muted);
-}
+
+
 
 .home h1 {
     max-width: 800px;
@@ -334,25 +317,7 @@ main {
     border-top: 1px solid var(--border);
 }
 
-.project-image {
-    cursor: pointer;
-	transition: transform 0.3s ease;
-    border: 5px solid var(--border);
-    position: absolute;
-    top: 20px;
-    right: 50px;
-    width: 350px;
-    height: 200px;
-    object-fit: cover;
-}
 
-.project-image:hover {
-		transform: scale(1.08);
-}
-
-.home-image:hover {
-		transform: scale(1.08);
-}
 
 .image-modal {
     display: none;
@@ -693,42 +658,67 @@ main {
     }
 }
 
-@media (max-width: 950px) {
-    .home-image-container {
-        position: static;
-        width: 100%;
-        max-width: 350px;
-        margin: 30px 0 10px;
-    }
+img {
+    max-width: 100%;
+}
 
-    .home-image {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 1 / 1;
+.home-image-container {
+    width: 100%;
+    max-width: 350px;
+    margin: 30px 0 10px;
+    text-align: center;
+}
+
+.home-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border: 8px solid var(--border);
+}
+
+.image-caption {
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.project-image {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    height: 200px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    border: 5px solid var(--border);
+    cursor: pointer;
+}
+
+/* Desktop only: float images to the right */
+@media (min-width: 1100px) {
+    .home-image-container {
+        position: absolute;
+        top: 90px;
+        right: 100px;
+        margin: 0;
     }
 
     .project-image {
-        position: static;
-        display: block;
-        width: 100%;
-        max-width: 350px;
-        height: 200px;
-        margin-bottom: 15px;
+        position: absolute;
+        top: 20px;
+        right: 50px;
+        margin: 0;
+    }
+
+    .project-image,
+    .home-image {
+        transition: transform 0.3s ease;
     }
 
     .project-image:hover,
     .home-image:hover {
-        transform: none;
-    }
-}
-
-@media (max-width: 650px) {
-    .contact {
-        padding-bottom: 100px;
-    }
-
-    .footer {
-        flex-direction: column;
+        transform: scale(1.08);
     }
 }
 
@@ -744,8 +734,4 @@ main {
     right: 25px;
     font-size: 36px;
     cursor: pointer;
-}
-
-@media (max-width: 950px) {
-    body { outline: 6px solid red; }
 }
