@@ -208,7 +208,8 @@ main {
 }
 
 .home-image {
-		transition: transform 0.3s ease;
+	transition: transform 0.3s ease;
+    border: 8px solid var(--border);
     position: absolute;
     top: 90px;
     right: 100px;
@@ -317,8 +318,9 @@ main {
 }
 
 .project-image {
-		cursor: pointer;
-		transition: transform 0.3s ease;
+    cursor: pointer;
+	transition: transform 0.3s ease;
+    border: 5px solid var(--border);
     position: absolute;
     top: 20px;
     right: 50px;
