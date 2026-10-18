@@ -1,7 +1,7 @@
 
 :root {
-    --background: #111113;
-    --sidebar: #171719;
+    --background: #636363fd;
+    --sidebar: #141414;
     --surface: #1e1e21;
     --border: #2c2b30;
     --text: #ededf0;
@@ -22,8 +22,14 @@ html {
 }
 
 body {
+    background-image:
+        linear-gradient(rgba(15, 15, 18, 0.98), rgba(15, 15, 18, 0.9)),
+        url("images/FH5_Trueno.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     min-width: 320px;
-    background: var(--background);
     color: var(--text);
     font-family: var(--font);
     font-size: 14px;
@@ -210,12 +216,23 @@ main {
 .home-image {
 	transition: transform 0.3s ease;
     border: 8px solid var(--border);
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.home-image-container {
     position: absolute;
     top: 90px;
     right: 100px;
     width: 350px;
-    height: 350px;
-    object-fit: cover;
+    text-align: center;
+}
+
+.image-caption {
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--text-muted);
 }
 
 .home h1 {
