@@ -12,6 +12,30 @@ const closeModal = document.getElementById("closeModal");
 // Update the copyright year.
 year.textContent = new Date().getFullYear();
 
+function updateActiveLink() {
+    let current = sections[0].id;
+
+    sections.forEach((section) => {
+        if (section.getBoundingClientRect().top <= window.innerHeight * 0.3) {
+            current = section.id;
+        }
+    });
+
+    navLinks.forEach((link) => {
+        const isActive = link.getAttribute("href") === `#${current}`;
+        link.classList.toggle("active", isActive);
+
+        if (isActive) {
+            link.setAttribute("aria-current", "location");
+        } else {
+            link.removeAttribute("aria-current");
+        }
+    });
+}
+
+window.addEventListener("scroll", updateActiveLink);
+updateActiveLink();
+
 // Open and close the mobile navigation.
 menuToggle.addEventListener("click", () => {
     const isOpen = document.body.classList.toggle("menu-open");
@@ -41,36 +65,7 @@ document.addEventListener("keydown", (event) => {
     }
 });
 
-// Highlight the navigation link for the section being viewed.
-const observer = new IntersectionObserver(
-    (entries) => {
-        entries.forEach((entry) => {
-            if (!entry.isIntersecting) {
-                return;
-            }
 
-            navLinks.forEach((link) => {
-                const isActive =
-                    link.getAttribute("href") === `#${entry.target.id}`;
-
-                link.classList.toggle("active", isActive);
-
-                if (isActive) {
-                    link.setAttribute("aria-current", "location");
-                } else {
-                    link.removeAttribute("aria-current");
-                }
-            });
-        });
-    },
-    {
-        rootMargin: "-20% 0px -65% 0px"
-    }
-);
-
-sections.forEach((section) => {
-    observer.observe(section);
-});
 
 
 

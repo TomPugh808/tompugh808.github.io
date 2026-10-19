@@ -7,7 +7,6 @@
     --text: #ededf0;
     --muted: #99979f;
     --purple: #1ec8f3;
-    --test: #b69af8;
     --font: Arial, Helvetica, sans-serif;
 }
 
@@ -416,6 +415,12 @@ main {
     color: #77747d;
     font-size: 10px;
     line-height: 1.8;
+}
+
+/* CV */
+
+.CV {
+    border-top: 1px solid var(--border);
 }
 
 /* About */
