@@ -246,7 +246,7 @@ main {
     gap: 10px;
     margin-top: 27px;
     color: var(--text);
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     transition: color 0.2s, gap 0.2s;
 }
@@ -420,8 +420,24 @@ main {
 /* CV */
 
 .CV {
+    padding-top: 60px;
+    padding-bottom: 60px;
     border-top: 1px solid var(--border);
 }
+
+.CV h2 {
+    margin-bottom: 14px;
+    font-size: clamp(29px, 3.4vw, 39px);
+    font-weight: 600;
+    letter-spacing: -1.4px;
+    line-height: 1.3;
+}
+
+.CV h2 span {
+    color: var(--purple);
+}
+
+
 
 /* About */
 
