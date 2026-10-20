@@ -538,12 +538,14 @@ main {
     display: none;
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1100px) {
     .section {
         padding-right: 110px;
         padding-left: 110px;
     }
 }
+
+
 
 @media (max-width: 950px) {
     .sidebar {
@@ -730,7 +732,7 @@ img {
 }
 
 /* Desktop only: float images to the right */
-@media (min-width: 1100px) {
+@media (min-width: 1500px) {
     .home-image-container {
         position: absolute;
         top: 90px;
@@ -756,6 +758,39 @@ img {
     }
 }
 
+/* Laptop screens: images to the side, smaller, with narrower text */
+@media (min-width: 1100px) and (max-width: 1499px) {
+    .project-image {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        width: 240px;
+        height: 140px;
+        margin: 0;
+    }
+
+    .home-image-container {
+        position: absolute;
+        top: 90px;
+        right: 60px;
+        width: 240px;
+        margin: 0;
+    }
+
+    .project-description,
+    .project-more p {
+        max-width: 340px;
+    }
+
+    .home h1 {
+        font-size: 46px;
+    }
+
+    .intro-text {
+        max-width: 400px;
+    }
+}
+
 #enlargedImage {
     max-width: 100%;
     max-height: 90vh;
@@ -768,4 +803,10 @@ img {
     right: 25px;
     font-size: 36px;
     cursor: pointer;
+}
+
+@media (max-width: 650px) {
+    body {
+        background-attachment: scroll;
+    }
 }
